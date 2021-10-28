@@ -61,6 +61,28 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-openfeign</artifactId>
 		</dependency>
+		<!-- Dependencia que nos permite marcar nuestro microservicio como un cliente -->
+		<!-- Nos ayudara a establecer la conexión con el servidor de configuración -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-config</artifactId>
+		</dependency>
+		<!-- Dependencia que nos permite refrescar las variables de entorno que se definen en el microservicio- config -->
+		<!-- dependiendo del tipo de profile defenido -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+		<!-- Dependencia que nos permite trabajar con el microservicio de configuracón -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-bootstrap</artifactId>
+		</dependency>
+		<!-- Dependencia que nos permite trabajar la resilensia y el corto-circuito -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-circuitbreaker-resilience4j</artifactId>
+		</dependency>
 	</dependencies>
 	
 	<dependencyManagement>
